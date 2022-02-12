@@ -1,0 +1,42 @@
+bry=100
+fries=65
+burger=90
+pizza=210
+choco=45
+cust_name=input('enter customer name:')
+cust_phn=int(input('enter customer phn number:'))
+bry_qun=int(input('enter biriyani quantity:'))
+fries_qun=int(input('enter fries quantity:'))
+burger_qun=int(input('enter burger quantity:'))
+pizza_qun=int(input('enter pizza quantity:'))
+choco_qun=int(input('enter chocolate quantity:'))
+bill=(bry*bry_qun)+(fries*fries_qun)+(burger*burger_qun)+(pizza*pizza_qun)+(choco*choco_qun)
+if bill>=5000:
+    dis=bill*10/100
+    tax=bill*10/100
+elif bill>=3000:
+    dis=bill*8/100
+    tax=bill*10/100
+elif bill>=2000:
+    dis=bill*5/100
+    tax=bill*18/100
+elif bill>=1000:
+    dis=bill*3/100
+    tax=bill*18/100
+else:
+    dis=0
+    tax=bill*18/100
+main_bill=bill-dis+tax
+print('your bill:',main_bill)
+
+output
+
+enter customer name:navya
+enter customer phn number:505959592
+enter biriyani quantity:5
+enter fries quantity:9
+enter burger quantity:2
+enter pizza quantity:5
+enter chocolate quantity:9
+your bill: 3073.6
+> 
